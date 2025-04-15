@@ -1,3 +1,6 @@
+package br.com.estudosBrunoC.models;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class Audio {
@@ -5,7 +8,7 @@ public class Audio {
     private double duracaoEmMinutos;
     private int totalReproducoes;
     private int curtidas;
-    private String classificacao;
+    private int classificacao;
     private String autor;
 
     public String getTitulo() {
@@ -40,11 +43,11 @@ public class Audio {
         this.curtidas = curtidas;
     }
 
-    public String getClassificacao() {
+    public int getClassificacao() {
         return classificacao;
     }
 
-    public void setClassificacao(String classificacao) {
+    public void setClassificacao(int classificacao) {
         this.classificacao = classificacao;
     }
 
@@ -56,12 +59,10 @@ public class Audio {
         this.autor = autor;
     }
 
-    public void favoritarMidia() {
+    public void favoritarMidia(Scanner scanner) {
         System.out.println("Você deseja favoritar esta mídia? (S/N)");
-        Scanner scanner = new Scanner(System.in);
         var favoritar = scanner.nextLine();
-        if (favoritar == "S") {
-            System.out.println("Música favoritada!");
+        if (favoritar.equalsIgnoreCase("S")) {
             curtidas++;
         }
     }
@@ -70,4 +71,6 @@ public class Audio {
         System.out.println("Mídia " + titulo + " sendo reproduzida");
         System.out.println("Duração: " + duracaoEmMinutos);
     }
+
 }
+

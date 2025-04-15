@@ -1,3 +1,5 @@
+package br.com.estudosBrunoC.models;
+
 public class Musica extends Audio {
     private String genero;
     private String album;
@@ -16,5 +18,16 @@ public class Musica extends Audio {
 
     public void setAlbum(String album) {
         this.album = album;
+    }
+
+    @Override
+    public int getClassificacao() {
+        if(this.getCurtidas() > 500) {
+            return 10;
+        } else if (this.getCurtidas() > 250 ) {
+            return 8;
+        } else {
+            return 6;
+        }
     }
 }
