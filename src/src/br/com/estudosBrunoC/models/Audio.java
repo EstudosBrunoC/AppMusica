@@ -72,5 +72,13 @@ public class Audio {
         System.out.println("Duração: " + duracaoEmMinutos);
     }
 
+    public void exibirFavoritos(List<Audio> favoritos) {
+        System.out.println("Mídias favoritas:");
+        for (Audio audio : favoritos) {
+            System.out.println("- " + audio.getTitulo());
+        }
+
+    }
 }
+
 
