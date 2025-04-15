@@ -6,7 +6,7 @@ O projeto segue boas práticas de organização de pacotes e separação por cla
 ### Classes Principais
 | Classe   | Descrição |
 |----------|-----------|
-| Audio  | Classe base com atributos e métodos comuns para mídias (título, duração, autor, curtidas etc). |
+| Áudio  | Classe base com atributos e métodos comuns para mídias (título, duração, autor, curtidas etc). |
 | Musica | Subclasse de Audio que representa uma música com atributo adicional gênero e álbum. |
 | Podcast| Subclasse de Audio que representa um podcast com atributos como descrição e episódio. |
 
