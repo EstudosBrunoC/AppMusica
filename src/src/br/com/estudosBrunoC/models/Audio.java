@@ -6,9 +6,7 @@ import java.util.Scanner;
 public class Audio {
     private String titulo;
     private double duracaoEmMinutos;
-    private int totalReproducoes;
     private int curtidas;
-    private int classificacao;
     private String autor;
 
     public String getTitulo() {
@@ -27,28 +25,12 @@ public class Audio {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
-    public int getTotalReproducoes() {
-        return totalReproducoes;
-    }
-
-    public void setTotalReproducoes(int totalReproducoes) {
-        this.totalReproducoes = totalReproducoes;
-    }
-
     public int getCurtidas() {
         return curtidas;
     }
 
     public void setCurtidas(int curtidas) {
         this.curtidas = curtidas;
-    }
-
-    public int getClassificacao() {
-        return classificacao;
-    }
-
-    public void setClassificacao(int classificacao) {
-        this.classificacao = classificacao;
     }
 
     public String getAutor() {

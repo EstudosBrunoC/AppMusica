@@ -20,14 +20,4 @@ public class Musica extends Audio {
         this.album = album;
     }
 
-    @Override
-    public int getClassificacao() {
-        if(this.getCurtidas() > 500) {
-            return 10;
-        } else if (this.getCurtidas() > 250 ) {
-            return 8;
-        } else {
-            return 6;
-        }
-    }
 }

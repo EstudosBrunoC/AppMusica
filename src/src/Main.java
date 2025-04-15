@@ -12,10 +12,11 @@ public class Main {
         List<Audio> listaFavotitos = new ArrayList<>();
 
         Musica musica1 = new Musica();
-        musica1.setTitulo("Shape of You");
-        musica1.setAutor("Ed Sheeran");
-        musica1.setGenero("Pop");
-        musica1.setDuracaoEmMinutos(4.24);
+        musica1.setTitulo("Hotline Bling");
+        musica1.setAutor("Drake");
+        musica1.setAlbum("Views");
+        musica1.setGenero("Pop/Rnb");
+        musica1.setDuracaoEmMinutos(4.27);
         musica1.reproduzirMidia();
         musica1.favoritarMidia(scanner);
         if (musica1.getCurtidas() > 0){
